@@ -18,13 +18,6 @@ public class CustomUniDirectionalLinkedList<T> implements UniDirectionalLinkedLi
   private Node<T> head;
   private int size;
 
-  /**
-   * This method creates a list of provided elements
-   *
-   * @param elements elements to add
-   * @param <T> generic type
-   * @return a new list of elements the were passed as method parameters
-   */
   public static <T> UniDirectionalLinkedList<T> of(T... elements) {
     UniDirectionalLinkedList<T> list = new CustomUniDirectionalLinkedList<>();
     for (T element : elements) {
